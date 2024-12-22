@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopeey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      #carouselExample{height: 500px;}
+      #click{display: flex;justify-content: space-evenly;}
+      #pdt
+        {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px;
+        }
+      .card1{background-color: rgb(161, 171, 171);}
+      #img{border-radius: 100%}
+      #brand{color: beige;}
+      #logo{display: flex;}
+      
+    </style>
+</head>
+<body>
+    
+  <!--navbar-->
+  <navbar>
+     <nav class="navbar bg-success" data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container text-center">
+          <div class="row align-items-end">
+            <div class="col" id="logo">
+              <img id="img" src="https://th.bing.com/th/id/OIP.JZWy-S0xMyJZecNl3F7qbwHaHa?rs=1&pid=ImgDetMain" alt="" height="40px" width="40px";>
+              <h3 id="brand"><i>Shopeey</i></h3>
+            </div>
+            <div class="col">
+              <div class="container-fluid">
+                <form class="d-flex" role="search" style="width: 1000px;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn white" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+            <div class="col">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </navbar>
+
+      <!--carousel-->
+      <carousel>
+      <div id="carouselExample" class="carousel slide" >
+        <div class="carousel-inner">
+           <div class="carousel-item active">
+            <img src="https://images.vexels.com/content/194731/preview/shop-online-web-slider-design-e2862a.png" class="d-block w-100" alt="..." height="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.pJZUbfqvAFbQ32A0XUKXqwAAAA?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." height="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/premium-vector/modern-sale-banner-website-slider-template-design_54925-46.jpg" class="d-block w-100" alt="..." height="500px">
+          </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>-->
+    </carousel>
+
+      <!--product section-->
+      <!--row1-->
+      <product_r1 id="pdt">
+       <div class="card" style="width: 18rem;">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/device/170479990115-pro-max-specs-1-800x800_one_to_one.jpg?VersionId=CoYKyqVzhGqPJ1BEe26Rxu1hskdjmhcS" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">IPHONE 16 PRO</h5>
+            <p class="card-text">Iphone 16 pro(512gb,Space Black) 48MP Triple Camera A18 bionic chip.<br><h5><s><i>$1200</i></s></h5><h3>$999/-</h3></p>
+            <click id="click">
+              <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+              <a href="#" class="btn btn-success">BUY NOW</a>
+             </click>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.evJadDOV8fCafwFpfXlCFwHaHb?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GALAXY S24 ULTRA</h5>
+            <p class="card-text">SAMSUNG Galaxy S24 Ultra 5G (Titanium Violet, 256 GB)  (12 GB RAM)<br><h5><s><i>$1200</i></s></h5><h3>$999/-</h3></p>
+            <click id="click">
+              <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+              <a href="#" class="btn btn-success">BUY NOW</a>
+             </click>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.rOr4o3OJi7mrlIjUHjqOOAHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MOTOROLA EDGE 50 ULTRA</h5>
+            <p class="card-text">Motorola Edge 50 Ultra(256gb,Wooden Clark).<br><h5><s><i>$800</i></s></h5><h3>$649/-</h3></p>
+            <click id="click">
+             <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+             <a href="#" class="btn btn-success">BUY NOW</a>
+            </click>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://techvorm.com/wp-content/uploads/2023/07/Nothing-Phone-2-2-1024x981-1-696x667.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NOTHING PHONE 2</h5>
+            <p class="card-text">Nothing Phone 2(256gb,Space Black) (8gb RAM).<br><h5><s><i>$800</i></s></h5><h3>$649/-</h3><br></p>
+            <click id="click">
+              <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+              <a href="#" class="btn btn-success">BUY NOW</a>
+             </click>
+          </div>
+        </div>
+      </product_r1>
+     
+      <!--row2-->
+      <product_r2 id="pdt">
+        <div class="card" style="width: 18rem;">
+           <img src="https://www.apple.com/newsroom/images/product/airpods/standard/Apple-AirPods-Pro-2nd-gen-hero-220907_big.jpg.large.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">AIRPODS 9</h5>
+             <p class="card-text">Airpods 9 (white) Noice cancelation and Hearing Aid facility.<br><h5><s><i>$500</i></s></h5><h3>$349/-</h3><br><br></p>
+             <click id="click">
+               <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+               <a href="#" class="btn btn-success">BUY NOW</a>
+              </click>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="https://images-na.ssl-images-amazon.com/images/I/61zaG990o8L._AC_SL1500_.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">XIOAMI ANDROID TV</h5>
+             <p class="card-text">Xioami Android TV with 55" display ,Android 11 OS supporting.<br><h5><s><i>$300</i></s></h5><h3>$199/-</h3><br><br></p>
+             <click id="click">
+               <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+               <a href="#" class="btn btn-success">BUY NOW</a>
+              </click>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="https://m.media-amazon.com/images/I/71lQ8rCFLlL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">JBL SPEAKERS</h5>
+             <p class="card-text">Some quick example text to build on the card  content.<br><h5><s><i>$300</i></s></h5><h3>$199/-</h3></p>
+             <click id="click">
+              <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+              <a href="#" class="btn btn-success">BUY NOW</a>
+             </click>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="https://m.media-amazon.com/images/I/31T3m-JGI8S._AC_.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">REALME POWERBANK</h5>
+             <p class="card-text">Some quick example text to build on the card  content.<br><h5><s><i>$300</i></s></h5><h3>$199/-</h3></p>
+             <click id="click">
+               <a href="#" class="btn btn-outline-success">ADD TO CART</a>
+               <a href="#" class="btn btn-success">BUY NOW</a>
+              </click>
+           </div>
+         </div>
+       </product_r2>
+
+       <!--footer-->
+
+       <footer id="foot">
+        <div class="card1">
+          <div class="card-header"><br><br>
+            <p class="card-text" style="margin: 40px;">Thanks for choosing Shopeey.Give us your feedbacks and help us to improve our work. With supporting text below as a natural lead-in to additional.Transparency about shipping options and estimated delivery times is essential for building trust with customers. Include a link to your shipping policy or provide concise details directly in the footer1.Clearly communicate your return and refund policies. Customers appreciate knowing their options if they’re not satisfied with their purchase. A link to your detailed return policy can be placed here </p>
+          </div>
+          <div class="container text-center">
+            <div class="row align-items-end">
+              <div class="col-4">
+    
+              </div>
+              <div class="col">
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">FAQ</a>
+                <a href="">Track Order</a>
+                <a href="">Wishlist</a>
+                <a href="">Account</a>
+                <a href="">Social Media Profiles</a>
+                <a href="">Payment Options</a>
+                <a href="">Affiliate Program</a><br><br>
+                <p>&copy; 2024 Shopeey Store All Rights Reserved</p>
+              </div>
+              <div class="col">
+      
+              </div>
+            </div>
+          </div>
+        </div>
+       </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
